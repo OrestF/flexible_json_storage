@@ -1,7 +1,7 @@
 class Api::Bins::CollectionsController < Api::BinsController
   def show
     @bins = Search::BinCollection.new(params).invoke
-    @bins.last.bin_collection.requested!
+    @bins.last.bin_collection.requested! if @bins.any?
 
     respond_to do |format|
       format.json { render json: @bins.as_json, status: :ok }

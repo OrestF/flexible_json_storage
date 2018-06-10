@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67f7bf7e-7d2b-4e88-98d0-b26bf97fb2c9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/flexible_json_storage.iml" afterPath="$PROJECT_DIR$/.idea/flexible_json_storage.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/bins/units_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/bins/units_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/bins_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/bins_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/bin.rb" afterPath="$PROJECT_DIR$/app/models/bin.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/bin_info.rb" afterPath="$PROJECT_DIR$/app/models/bin_info.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/bin_params_arranger.rb" afterPath="$PROJECT_DIR$/app/services/bin_params_arranger.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/mutators/bin/create.rb" afterPath="$PROJECT_DIR$/app/services/mutators/bin/create.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/bins/collections_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/bins/collections_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/search/bin_collection.rb" afterPath="$PROJECT_DIR$/app/services/search/bin_collection.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -46,18 +38,18 @@
       <file leaf-file-name="collections_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/bins/collections_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="69">
+              <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bin_collection.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bin_collection.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/search/bin_collection.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+            <state relative-caret-position="687">
+              <caret line="104" column="7" lean-forward="false" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -83,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bin_collection.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bin_collection.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/bin_collection.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
@@ -123,21 +115,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bin.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/bin.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>activemode</find>
+      <find>&lt;&gt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,10 +150,11 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/services/bin_params_arranger.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/bins_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/bins/collections_controller.rb" />
-        <option value="$PROJECT_DIR$/app/services/search/bin_collection.rb" />
         <option value="$PROJECT_DIR$/app/models/bin.rb" />
         <option value="$PROJECT_DIR$/app/models/bin_collection.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/bins/collections_controller.rb" />
+        <option value="$PROJECT_DIR$/app/services/search/builder/bin_query_param.rb" />
+        <option value="$PROJECT_DIR$/app/services/search/bin_collection.rb" />
       </list>
     </option>
   </component>
@@ -181,8 +165,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
-    <option name="y" value="30" />
+    <option name="y" value="1110" />
     <option name="width" value="1920" />
     <option name="height" value="1050" />
   </component>
@@ -682,15 +665,15 @@
       <option name="presentableId" value="Default" />
       <updated>1528472940382</updated>
       <workItem from="1528472943083" duration="888000" />
-      <workItem from="1528533892841" duration="36972000" />
+      <workItem from="1528533892841" duration="52491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37860000" />
+    <option name="totallyTimeSpent" value="53379000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="30" width="1920" height="1050" extended-state="6" />
+    <frame x="0" y="1110" width="1920" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25296018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -907,50 +890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/bins/collections_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/search/bin_collection.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/bins_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/bin_params_arranger.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/bins/units_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/bin.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="12" />
+          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -983,6 +926,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/bin_params_arranger.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/bins/units_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/bins/collections_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/bins_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/search/builder/bin_query_param.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/search/bin_collection.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="104" column="7" lean-forward="false" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
           <folding />
         </state>
       </provider>
