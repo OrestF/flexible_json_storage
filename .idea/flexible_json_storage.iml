@@ -168,6 +168,7 @@
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.13.1, RVM: ruby-2.5.0 [rails52]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.3.1, RVM: ruby-2.5.0 [rails52]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.8.2, RVM: ruby-2.5.0 [rails52]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="oj (v3.6.2, RVM: ruby-2.5.0 [rails52]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v3.0.2, RVM: ruby-2.5.0 [rails52]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.11.4, RVM: ruby-2.5.0 [rails52]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.0.5, RVM: ruby-2.5.0 [rails52]) [gem]" level="application" />

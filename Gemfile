@@ -17,9 +17,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'mongoid', '~> 6.0'
+gem 'mongoid', '~> 7.0'
 gem 'bson_ext'
 gem 'slim-rails'
+gem 'oj'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -9,8 +9,11 @@ Rails.application.routes.draw do
   # end
 
   namespace :api do
+    resources :bins, only: [:create]
+
     namespace :bins do
-      resources :units, only: [:show, :create]
+      resources :units, only: [:show]
+      resources :collections, only: [:show]
     end
   end
 

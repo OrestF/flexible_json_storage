@@ -97,7 +97,7 @@ GEM
     minitest (5.11.3)
     mongo (2.5.3)
       bson (>= 4.3.0, < 5.0.0)
-    mongoid (6.4.1)
+    mongoid (7.0.1)
       activemodel (>= 5.1, < 6.0.0)
       mongo (>= 2.5.1, < 3.0.0)
     msgpack (1.2.4)
@@ -105,6 +105,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
+    oj (3.6.2)
     public_suffix (3.0.2)
     puma (3.11.4)
     rack (2.0.5)
@@ -206,7 +207,8 @@ DEPENDENCIES
   chromedriver-helper
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
-  mongoid (~> 6.0)
+  mongoid (~> 7.0)
+  oj
   puma (~> 3.11)
   rails (~> 5.2.0)
   sass-rails (~> 5.0)

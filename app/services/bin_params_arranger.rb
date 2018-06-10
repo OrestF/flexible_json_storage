@@ -6,7 +6,7 @@ class BinParamsArranger
   def prepare
     permit
     filter
-    parse
+    extract_data
   end
 
   private
@@ -19,11 +19,7 @@ class BinParamsArranger
     @params = @params.except(:controller, :action)
   end
 
-  def parse
-    @parsed_params = @params.keys.map { |k| JSON.parse(k) }[0]
+  def extract_data
+    @params[:content]
   end
-
-  # def unlock
-  #   ActiveSupport::HashWithIndifferentAccess.new(@parsed_params)
-  # end
 end
