@@ -2,12 +2,6 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'home/index'
 
-  # namespace :api do
-  #   resources :bins do
-  #     resource :unit, only: :create
-  #   end
-  # end
-
   namespace :api do
     resources :bins, only: [:create]
 

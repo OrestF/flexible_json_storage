@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
 
+
 body {
-  height: 100vh;
   font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .home-content-wrapper {
@@ -16,27 +18,25 @@ body {
   z-index: 100;
 }
 
-.balloon-animation-wrapper {
-  z-index: -100;
-}
-
 .home-page-desc {
   text-align: center;
   z-index: 100;
 }
 
-.bins-form {
+.bins-form-wrapper {
   margin-top: 1em;
   opacity: 0.8;
   max-height: 5rem;
   z-index: 100;
 
   form {
-    max-width: 550px;
+    box-sizing: border-box;
+    max-width: 660px;
     margin: auto;
     z-index: 100;
 
     textarea {
+      box-sizing: border-box;
       z-index: 100;
       padding: 1rem;
       border: 1px solid #eee;
@@ -75,6 +75,7 @@ form.invalid {
   font-size: 20px;
   padding: 5px 10px 5px 10px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -103,4 +104,16 @@ form.invalid {
 
 .form-result, .form-errors {
   margin-top: 1rem;
+}
+
+.links {
+  padding: 0.5rem 1rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: transparent;
+  }
 }

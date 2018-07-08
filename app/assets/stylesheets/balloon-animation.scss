@@ -6,13 +6,23 @@
   --color-strings: #d9d9d9;
   --color-basket: #ceb89f;
   --size-cloud: 8rem;
-  --size-balloon: 14rem;
+  --size-balloon: 12rem;
   --animation-speed: 15s;
 }
 body {
   background-color: var(--color-bg);
-  overflow: hidden;
 }
+
+.balloon-animation-wrapper {
+  z-index: -100;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .clouds {
   position: absolute;
   top: 0%;

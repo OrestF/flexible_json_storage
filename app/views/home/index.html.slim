@@ -1,12 +1,13 @@
 .home-content-wrapper
+  .links
+    = link_to('Doc', 'https://github.com/OrestF/flexible_json_storage/blob/master/README.md', target: '_blank')
   h1.home-page-title
     | Flexible json storage
-
 
   .home-page-desc
     | Store and retrieve your JSON data
 
-  .bins-form
+  .bins-form-wrapper
     = render 'home/bins/form'
 
 .balloon-animation-wrapper
