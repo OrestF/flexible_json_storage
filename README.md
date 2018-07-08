@@ -26,7 +26,7 @@ Store and retrieve your JSON examples via real http requests
 
 ```json
 {
-    "url": "http://localhost:3000/api/bins/units/5b41fc27eeefcc6d92927540"
+    "url": "https://flexjs.herokuapp.com/api/bins/units/5b41fc27eeefcc6d92927540"
 }
 ```
 
@@ -80,7 +80,7 @@ Use this url to retrieve your data
 
 ```json
 {
-    "url": "http://localhost:3000/api/bins/collections/5b41e4b9eeefcc20e8f0f8b2"
+    "url": "https://flexjs.herokuapp.com/api/bins/collections/5b41e4b9eeefcc20e8f0f8b2"
 }
 ```
 
@@ -95,7 +95,7 @@ Example
 ###### request
 
 ```
-http://localhost:3000/api/bins/collections/5b41e4b9eeefcc20e8f0f8b2?q[pages]=>400
+https://flexjs.herokuapp.com/api/bins/collections/5b41e4b9eeefcc20e8f0f8b2?q[pages]=>400
 ```
 
 ###### response
