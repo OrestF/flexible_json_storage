@@ -1,3 +1,106 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+body {
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home-content-wrapper {
+  position: relative;
+  top: 5%;
+}
+
+.home-page-title {
+  text-align: center;
+  font-size: 2rem;
+  z-index: 100;
+}
+
+.balloon-animation-wrapper {
+  z-index: -100;
+}
+
+.home-page-desc {
+  text-align: center;
+  z-index: 100;
+}
+
+.bins-form {
+  margin-top: 1em;
+  opacity: 0.8;
+  max-height: 5rem;
+  z-index: 100;
+
+  form {
+    max-width: 550px;
+    margin: auto;
+    z-index: 100;
+
+    textarea {
+      z-index: 100;
+      padding: 1rem;
+      border: 1px solid #eee;
+      border-radius: 3px;
+      resize: vertical;
+      width: 100%;
+      display: block;
+      margin: auto;
+      font-family: inherit;
+      font-size: inherit;
+      min-height: 200px;
+      transition: border-color .3s ease-in;
+      line-height: 21px;
+    }
+  }
+}
+
+form.invalid {
+  input, textarea {
+    border: 1px solid red;
+  }
+}
+
+.btn {
+  background: #66bb6a;
+  background-image: -webkit-linear-gradient(top, #66bb6a, #5da960);
+  background-image: -moz-linear-gradient(top, #66bb6a, #5da960);
+  background-image: -ms-linear-gradient(top, #66bb6a, #5da960);
+  background-image: -o-linear-gradient(top, #66bb6a, #5da960);
+  background-image: linear-gradient(to bottom, #66bb6a, #5da960);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  border: 1px solid #5da960;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #5da960;
+  text-decoration: none;
+}
+
+.alert {
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d0e9c6;
+  color: #3c763d;
+}
+
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebcccc;
+  color: #a94442;
+}
+
+.form-result, .form-errors {
+  margin-top: 1rem;
+}

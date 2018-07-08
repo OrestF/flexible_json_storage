@@ -21,6 +21,7 @@ gem 'mongoid', '~> 7.0'
 gem 'bson_ext'
 gem 'slim-rails'
 gem 'oj'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

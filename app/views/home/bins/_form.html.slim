@@ -1,0 +1,5 @@
+= form_tag(api_bins_path, { class: 'bins-create-form', id: 'bins-form' }) do
+  = text_area_tag :content
+  div
+    br
+    = submit_tag 'Create', data: { disable_with: false }, class: 'btn'

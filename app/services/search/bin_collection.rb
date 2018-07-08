@@ -73,7 +73,7 @@ module Search
 
     def strip_value
       if matches_query?(@search_node.query_value)
-        @search_node.search_value = @search_node.query_value[matches_operator.size..-1]
+        @search_node.search_value = @search_node.query_value[MATCHES_OPERATOR.size..-1]
         return
       end
       operators_mapping.each_key do |sign|
