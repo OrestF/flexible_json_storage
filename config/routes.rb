@@ -11,5 +11,10 @@ Rails.application.routes.draw do
     end
   end
 
+  # ALIAS
+
+  get '/:id',   to: 'api/bins/units#show'
+  get '/c/:id', to: 'api/bins/collections#show'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

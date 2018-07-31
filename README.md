@@ -8,7 +8,7 @@ Store and retrieve your JSON examples via real http requests
 
 ###### request
 ```json
-{ "content": 
+{ "content":
    {
         "author": "Marijn Haverbeke",
         "description": "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.",
@@ -29,8 +29,12 @@ Store and retrieve your JSON examples via real http requests
     "url": "https://flexjs.herokuapp.com/api/bins/units/5b41fc27eeefcc6d92927540"
 }
 ```
+it's possible to use shorter version of url
+```json
+ "https://flexjs.herokuapp.com/5b41fc27eeefcc6d92927540"
+```
 
-Use this url to retrieve your data 
+Use this url to retrieve your data
 
 ### Multiple data example (collection)
 
@@ -83,6 +87,10 @@ Use this url to retrieve your data
     "url": "https://flexjs.herokuapp.com/api/bins/collections/5b41e4b9eeefcc20e8f0f8b2"
 }
 ```
+it's possible to use shorter version of url for collections
+```json
+ "https://flexjs.herokuapp.com/c/5b41e4b9eeefcc20e8f0f8b2"
+```
 
 #### Filters
 
@@ -96,6 +104,10 @@ Example
 
 ```
 https://flexjs.herokuapp.com/api/bins/collections/5b41e4b9eeefcc20e8f0f8b2?q[pages]=>400
+```
+or
+```
+ https://flexjs.herokuapp.com/c/5b41e4b9eeefcc20e8f0f8b2?q[pages]=>400
 ```
 
 ###### response
@@ -125,13 +137,13 @@ https://flexjs.herokuapp.com/api/bins/collections/5b41e4b9eeefcc20e8f0f8b2?q[pag
       "website": "http://speakingjs.com/"
     }
   ]
- 
+
 ```
 
 #### List of possible filters
 ```
-    =    : equals            ?q[name]=John (case sensitive) 
-    =>   : greater than      ?q[pages]=>300 
+    =    : equals            ?q[name]=John (case sensitive)
+    =>   : greater than      ?q[pages]=>300
     =<   : less than         ?q[pages]=<300
     =>=  : equals or greater ?q[pages]=>=400
     =<=  : equals or less    ?q[pages]=<=200
