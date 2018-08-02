@@ -41,9 +41,9 @@ module Search
       @search_node.search_key = key.to_sym
       return if matches_query?(value)
 
-      operators_mapping.each_key do |sign|
+      OPERATORS_MAPPING.each_key do |sign|
         if value.start_with?(sign)
-          @search_node.search_key = key.to_sym.send(operators_mapping[sign])
+          @search_node.search_key = key.to_sym.send(OPERATORS_MAPPING[sign])
           break
         end
       end
@@ -51,13 +51,6 @@ module Search
 
     def matches_query?(value)
       value.start_with?(MATCHES_OPERATOR)
-    end
-
-    def operators_mapping
-      { '>=' => 'gte',
-        '<=' => 'lte',
-        '>'  => 'gt',
-        '<'  => 'lt'}
     end
 
     def prepare_value # (prepared_key, init_value)
@@ -76,7 +69,7 @@ module Search
         @search_node.search_value = @search_node.query_value[MATCHES_OPERATOR.size..-1]
         return
       end
-      operators_mapping.each_key do |sign|
+      OPERATORS_MAPPING.each_key do |sign|
         if @search_node.query_value.start_with?(sign)
           @search_node.search_value = @search_node.query_value[sign.size..-1]
           break
